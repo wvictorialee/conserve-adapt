@@ -39,17 +39,17 @@ header:
       text: ""
       # Logo filename in `assets/media/` folder
       filename: "logo.svg"
-    button:
-      enable: true
-      text: "Get Started"
-      url: "https://hugoblox.com/templates/details/docs/"
+    # button:
+    #   enable: true
+    #   text: "Get Started"
+    #   url: "https://hugoblox.com/templates/details/docs/"
     show_search: true
     show_theme_chooser: true
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company. This work is licensed under {license}'
+    notice: '© {year} W. Victoria Lee. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -67,18 +67,18 @@ features:
     enable: false
   privacy_pack:
     enable: false
-  repository:
-    url: 'https://github.com/HugoBlox/hugo-blox-builder/'
-    content_dir: 'starters/documentation/content'
-    branch: 'main'
-  feedback:
-    responses:
-      positive: 'Glad to hear it! [Any ideas for improvements?](https://github.com/<USERNAME>/<REPO>/issues/new).'
-      negative: 'Sorry to hear that. [Please tell us how we can improve](https://github.com/<USERNAME>/<REPO>/issues/new).'
-  comment:
-    provider: ''
-    giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
+  # repository:
+  #   url: 'https://github.com/HugoBlox/hugo-blox-builder/'
+  #   content_dir: 'starters/documentation/content'
+  #   branch: 'main'
+  # feedback:
+  #   responses:
+  #     positive: 'Glad to hear it! [Any ideas for improvements?](https://github.com/<USERNAME>/<REPO>/issues/new).'
+  #     negative: 'Sorry to hear that. [Please tell us how we can improve](https://github.com/<USERNAME>/<REPO>/issues/new).'
+  # comment:
+  #   provider: ''
+  #   giscus:
+  #     repo: ''
+  #     repo_id: ''
+  #     category: ''
+  #     category_id: ''
