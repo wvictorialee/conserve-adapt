@@ -13,8 +13,8 @@ marketing:
   seo:
     site_type: Project
     local_business_type: ''
-    org_name: ''
-    description: ''
+    org_name: 'University of Edinburgh'
+    description: 'A retrofit resource site for historic property owners in Edinburgh and Scotland, focusing on windows.'
     twitter: ''
   analytics:
     google_analytics: ''
