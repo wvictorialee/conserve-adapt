@@ -1,7 +1,9 @@
 ---
-linkTitle: Reference
-title: Reference
+linkTitle: References
+title: References
+weight: 20
+sidebar:
+  open: true
 ---
 
-This section covers reference docs.
-
+Additional resources and further reading.

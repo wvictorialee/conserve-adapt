@@ -1,16 +1,16 @@
 ---
-linkTitle: Documentation
-title: Introduction
+linkTitle: Resources
+title: Welcome!
 ---
 
-👋 Welcome to the demo of the Hugo Blox Documentation template!
+Resources on this site focus on window improvements and retrofits for historic buildings in Edinburgh. But much information is also relevant for other councils in Scotland and other types of retrofits.
 
-<!--more-->
+Select a topic from the menu to the left to see available resources. 
 
-This site is a demo of the Hugo Blox Documentation theme. For the full documentation on how to use this template, refer to the [Hugo Blox Documentation](https://docs.hugoblox.com/).
+> [!NOTE] Disclaimer!
+> Every property is different! The materials on this site are for general information only and is not a substitute for professional advice or surveys.   
 
-## Next
+## What are 'historic' buildings?
+The terms traditional, historic, and listed buildings are often used interchangeably although they don’t always mean the same thing. **Traditional buildings** are defined by Scotland’s Building Standard as buildings constructed before or around 1919. **Listed buildings** are buildings determined to have special architectural or historic interests and are protected under the Planning (Listed Buildings and Conservation Areas) (Scotland) Act 1997. Oftentimes, these building are  traditional buildings, but buildings younger than 1919 can also have historic significance. 
 
-{{< cards >}}
-  {{< card url="getting-started" title="Get Started" icon="document-text" subtitle="Create your docs in just 5 minutes!" >}}
-{{< /cards >}}
+There is no official definition for **historic buildings**, but in this site I use the term generally to include listed buildings and buildings that are in Conservation Area.

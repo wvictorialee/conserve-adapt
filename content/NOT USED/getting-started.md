@@ -1,7 +1,9 @@
 ---
 title: Getting Started
-date: 2024-02-17
+# date: 2024-02-17
 weight: 1
+# CURRENTLY NOT DISPLAYING THIS PAGE
+Draft: true
 ---
 
 ## Quick Start from Template

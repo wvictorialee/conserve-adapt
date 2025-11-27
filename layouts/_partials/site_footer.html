@@ -10,6 +10,7 @@
     {{ errorf "Check your `params.yaml`. Cannot find footer block at `layouts/_partials/%s`" $footer_section_path }}
   {{ end }}
   {{ partial $footer_section_path . }}
+ 
 
   {{/* Attribution - PLEASE DO NOT REMOVE THIS, SUPPORT OPEN SOURCE */}}
   {{- if not (site.Params.i_am_a_sponsor | default false) -}}

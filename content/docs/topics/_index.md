@@ -1,11 +1,11 @@
 ---
-title: Guide
-weight: 2
+title: Topics
+weight: 20
 sidebar:
   open: true
 ---
 
-{{< cards >}}
+<!-- {{< cards >}}
   {{< card url="project-structure" title="Project Structure" icon="document-duplicate" >}}
   {{< card url="configuration" title="Configuration" icon="adjustments-vertical" >}}
-{{< /cards >}}
+{{< /cards >}} -->

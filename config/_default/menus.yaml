@@ -5,11 +5,11 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Documentation
+  - name: Resources
     url: docs/
     weight: 20
-  - name: Updates
-    url: updates/
+  - name: About
+    url: about/
     weight: 30
   # - name: Showcase
   #   url: showcase/

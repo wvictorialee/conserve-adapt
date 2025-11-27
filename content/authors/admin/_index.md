@@ -4,8 +4,8 @@ title: W. Victoria Lee
 
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: S
+last_name: C
 
 
 # Is this the primary user of the site?
