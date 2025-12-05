@@ -1,7 +1,18 @@
 ---
 title: "Privacy Policy"
 summary: Details the privacy of this website
+layout: page
+type: page
+
 date: 2025-10-19
+show_date: false               # under‑title date hidden
+
+lastmod: 2025-12-01T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
+# show_date_updated: true      # optional; keeping this true is fine too
+# Optional: if your layout still prints the meta row, hide it
+show_meta: false          # some layouts use this
+#
 draft: false
 share: false
 show_author: false

@@ -74,7 +74,7 @@ sections:
     content:
       title: 
       text: |
-        Click on **Resources** on the top to enter. 
+        Click on **Resources** at the top to enter. 
         
       
 ---

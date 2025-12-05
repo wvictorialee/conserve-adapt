@@ -1,0 +1,186 @@
+/* =========================================================
+   Custom CSS for conserve-adapt
+   - Unify body copy
+   - Lists: square bullets + correct colour
+   - Resources list: Title (line 1), Badges (line 2), Summary (line 3)
+   - Badge colours for sources/type/topics
+   ========================================================= */
+
+/* 1) Unify main copy size across pages (limit to content wrappers) */
+.article-container,
+.article-style,
+.content,
+.prose {
+  font-size: 1rem;        /* ~16px if html = 16px; adjust if you prefer larger default copy */
+  line-height: 1.7;
+}
+
+/* Ensure paragraphs/lists inherit consistently even if wrappers set text-sm/text-lg */
+.article-container p, .article-container li,
+.article-style p, .article-style li,
+.content p, .content li,
+.prose p, .prose li {
+  font-size: inherit !important;
+  line-height: inherit;
+}
+
+/* 2) Lists: square bullets and markers matching text colour (light and dark) */
+.prose ul,
+.article-container ul,
+.content ul,
+.prose ul ul,
+.article-container ul ul,
+.content ul ul {
+  list-style-type: square !important;
+}
+
+.prose ul li::marker,
+.article-container ul li::marker,
+.content ul li::marker,
+.prose ul ul li::marker,
+.article-container ul ul li::marker,
+.content ul ul li::marker {
+  color: currentColor !important; /* bullets inherit the text colour (black/white in light/dark) */
+  font-size: 1.2em;               /* optional: slightly larger marker for clarity */
+}
+
+/* 3) Resources list
+   Goal: Title (line 1), Badges (line 2), Summary (line 3)
+   This uses CSS Grid and 'display: contents' so we can order nested items.
+*/
+
+.resource-list { list-style: none; margin: 1rem 0; padding: 0; }
+
+.resource-item {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "badges"
+    "summary";
+  row-gap: .35rem;
+  padding: .6rem 0;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+:root.dark .resource-item { border-bottom-color: rgba(255,255,255,.08); }
+
+/* Let nested title/summary behave as direct grid children */
+.resource-main { display: contents; }
+
+/* Title (line 1) */
+.resource-title {
+  grid-area: title;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.resource-title:hover { opacity: .9; }
+
+/* Badges (line 2) */
+.badges {
+  grid-area: badges;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem .4rem;
+}
+
+/* Summary (line 3) */
+.resource-summary {
+  grid-area: summary;
+  margin-top: .05rem;
+  font-size: .9rem;
+  color: #475569;
+}
+:root.dark .resource-summary { color: #9ca3af; }
+
+/* Optional group headings when using group_by in the shortcode */
+.resources-group {
+  margin: 1rem 0 .25rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* 4) Badges: base style + colour variants */
+
+/* Base badge */
+/* Base Badges: smaller, flatter chips */
+.badge {
+  display: inline-block;
+  padding: 0.08rem 0.45rem;  /* less top/bottom padding, same side padding */
+  border-radius: 999px;      /* keep pill shape; reduce if you want squarer: 0.4rem */
+  font-size: 0.60rem;        /* was ~0.70–0.75rem */
+  line-height: 1.02;         /* makes the pill a bit flatter */
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+}
+
+
+
+
+/* Fallback (neutral) if no specific colour set */
+.badge--source, .badge--type, .badge--topic {
+  background: var(--badge-bg, #f3f4f6);
+  color: var(--badge-fg, #374151);
+  border-color: var(--badge-br, #e5e7eb);
+}
+
+/* Source badges (extend as needed) */
+.badge--source.badge--source-scottish-government { background: #d8eafd; color: #0b3b7a; border-color: #b9d4f7; }
+.badge--source.badge--source-edinburgh-council   { background: #e8e7f6; color: #3a2c7a; border-color: #d8d6f3; }
+.badge--source.badge--source-historic-environment-scotland { background: #e9fbf3; color: #065f46; border-color: #c8f2df; }
+.badge--source.badge--source-edinburgh-world-heritage      { background: #e6f3ec; color: #14532d; border-color: #cbe7d6; }
+.badge--source.badge--source-uk-charity         { background: #fff4d6; color: #92400e; border-color: #fbe6a8; }
+
+/* Type badges */
+.badge--type.badge--type-pdf  { background: #fee2e2; color: #991b1b; border-color: #fecaca; }
+.badge--type.badge--type-link { background: #e5e7eb; color: #374151; border-color: #d1d5db; }
+
+/* Topic badges (examples; add more as you introduce topics) */
+.badge--topic.badge--topic-planning  { background: #dbeafe; color: #1e40af; border-color: #bfdbfe; }
+.badge--topic.badge--topic-technical { background: #e0e7ff; color: #3730a3; border-color: #c7d2fe; }
+
+
+/* Making the logo bigger (and not just the height of the text */
+/* 1) Define a navbar height (adjust to taste, e.g. 56px = 3.5rem) */
+:root { --navbar-height: 56px; }
+
+/* 2) Make the header/nav honour that height and remove vertical padding */
+#site-header.header,
+header .navbar {
+  min-height: var(--navbar-height);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* 3) Make the brand link not add extra “line-height” space */
+.navbar .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 0.5rem 0 0; /* small gap before first menu item */
+}
+
+/* 4) Size the logo to fill the navbar height (minus a small safety margin) */
+.navbar .navbar-brand img,
+.navbar .navbar-brand .logo,
+.navbar .navbar-brand svg {
+  height: calc(var(--navbar-height) - 8px); /* trim a few px to avoid overflow */
+  width: auto;
+  display: block;  /* remove baseline gap */
+  margin: 0;
+  padding: 0;
+}
+
+/* 5) If the template still prints brand text, hide it (keep the image visible) */
+.navbar .navbar-brand { font-size: 0 !important; }
+.navbar .navbar-brand .logo,
+.navbar .navbar-brand img,
+.navbar .navbar-brand svg { font-size: initial; }
+
+@media (max-width: 768px) {
+  :root { --navbar-height: 48px; }
+}
+

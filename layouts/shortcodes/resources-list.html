@@ -1,0 +1,180 @@
+{{/* Load items */}}
+{{ $items := site.Data.usefuldoc.items | default (slice) }}
+
+{{/* Normalise names (short → canonical) for sources */}}
+{{ $sourceMap := dict
+  "Scot Gov" "Scottish Government" "ScotGov" "Scottish Government"
+  "Edin Council" "Edinburgh Council" "Edinburgh Council" "Edinburgh Council"
+  "HES" "Historic Environment Scotland"
+  "EWH" "Edinburgh World Heritage"
+}}
+
+{{/* Collect normalised items */}}
+{{ $norm := slice }}
+{{ range $items }}
+  {{ $title   := .title   | default .Title }}
+  {{ $url     := .url     | default .URL }}
+  {{ $summary := .summary | default .Summary }}
+  {{ $weight  := int (default 9999 (default .Weight .weight)) }}
+
+  {{/* sources: string or list */}}
+  {{ $sources := slice }}
+  {{ if .sources }}
+    {{ range .sources }}
+      {{ $label := . }}
+      {{ if (index $sourceMap $label) }}{{ $label = index $sourceMap $label }}{{ end }}
+      {{ if not (in $sources $label) }}{{ $sources = $sources | append $label }}{{ end }}
+    {{ end }}
+  {{ else if .source }}
+    {{ $label := .source }}
+    {{ if (index $sourceMap $label) }}{{ $label = index $sourceMap $label }}{{ end }}
+    {{ $sources = slice $label }}
+  {{ end }}
+
+  {{/* topics: string or list */}}
+  {{ $topics := slice }}
+  {{ if .topics }}
+    {{ range .topics }}{{ if not (in $topics .) }}{{ $topics = $topics | append . }}{{ end }}{{ end }}
+  {{ else if .topic }}
+    {{ $topics = slice .topic }}
+  {{ end }}
+
+  {{/* type: explicit or inferred from URL */}}
+  {{ $type := .type | default .Type | default "" }}
+  {{ if eq $type "" }}
+    {{ $lu := lower $url }}
+    {{ if or (strings.HasSuffix $lu ".pdf") (findRE "\\.pdf(\\?|$)" $lu) }}
+      {{ $type = "PDF" }}
+    {{ else }}
+      {{ $type = "Link" }}
+    {{ end }}
+  {{ else }}
+    {{/* normalise case */}}
+    {{ $type = cond (eq (lower $type) "pdf") "PDF" "Link" }}
+  {{ end }}
+
+  {{ $norm = $norm | append (dict
+    "title" $title
+    "url" $url
+    "summary" $summary
+    "weight" $weight
+    "sources" $sources
+    "topics" $topics
+    "type" $type
+  ) }}
+{{ end }}
+
+{{/* Optional filters from shortcode params: source="…" / topic="…" */}}
+{{ $wantSource := .Get "source" | default "" }}
+{{ $wantTopic  := .Get "topic"  | default "" }}
+{{ if ne $wantSource "" }}
+  {{/* normalise filter via map too */}}
+  {{ if (index $sourceMap $wantSource) }}{{ $wantSource = index $sourceMap $wantSource }}{{ end }}
+  {{ $filtered := slice }}
+  {{ range $norm }}{{ if in .sources $wantSource }}{{ $filtered = $filtered | append . }}{{ end }}{{ end }}
+  {{ $norm = $filtered }}
+{{ end }}
+{{ if ne $wantTopic "" }}
+  {{ $filtered := slice }}
+  {{ range $norm }}{{ if in .topics $wantTopic }}{{ $filtered = $filtered | append . }}{{ end }}{{ end }}
+  {{ $norm = $filtered }}
+{{ end }}
+
+{{/* Sort (weight then title) */}}
+{{ $sorted := sort (sort $norm "title") "weight" "asc" }}
+
+{{/* Select a subset: either only=, or limit/offset */}}
+{{ $only := .Get "only" | default "" }}
+{{ if ne $only "" }}
+  {{ $want := split (replace $only " " "") "," }}
+  {{ $filtered := slice }}
+  {{ range $i, $it := $sorted }}
+    {{ $pos := printf "%d" (add $i 1) }}    {{/* positions are 1-based */}}
+    {{ if in $want $pos }} {{ $filtered = $filtered | append $it }} {{ end }}
+  {{ end }}
+  {{ $sorted = $filtered }}
+{{ else }}
+  {{ $offset := int (default 0 (.Get "offset")) }}
+  {{ $limit  := int (default 0 (.Get "limit")) }}
+  {{ if gt $offset 0 }} {{ $sorted = after $offset $sorted }} {{ end }}
+  {{ if gt $limit 0 }}  {{ $sorted = first $limit $sorted }} {{ end }}
+{{ end }}
+
+
+{{/* Grouping: group_by="source" or "topic" (optional) */}}
+{{ $groupBy := .Get "group_by" | default "" }}
+{{ if eq $groupBy "source" }}
+  {{/* build unique, sorted source list */}}
+  {{ $groups := slice }}
+  {{ range $sorted }}
+    {{ range .sources }}{{ if not (in $groups .) }}{{ $groups = $groups | append . }}{{ end }}{{ end }}
+  {{ end }}
+  {{ $groups = sort $groups }}
+  {{ range $groups }}
+    <h3 class="resources-group">{{ . }}</h3>
+    <ul class="resource-list">
+      {{ range $sorted }}
+        {{ if in .sources $ }}
+          {{ $slugSrcs := slice }}{{ range .sources }}{{ $slugSrcs = $slugSrcs | append (urlize .) }}{{ end }}
+          {{ $typeSlug := "link" }}{{ if eq .type "PDF" }}{{ $typeSlug = "pdf" }}{{ end }}
+          <li class="resource-item">
+            <div class="badges">
+              {{ range .sources }}<span class="badge badge--source badge--source-{{ urlize . }}">{{ . }}</span>{{ end }}
+              <span class="badge badge--type badge--type-{{ $typeSlug }}">{{ .type }}</span>
+              {{ range .topics }}<span class="badge badge--topic badge--topic-{{ urlize . }}">{{ . }}</span>{{ end }}
+            </div>
+            <div class="resource-main">
+              <a href="{{ .url }}" target="_blank" rel="noopener" class="resource-title">{{ .title }}</a>
+              {{ with .summary }}<div class="resource-summary">{{ . | markdownify }}</div>{{ end }}
+            </div>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ else if eq $groupBy "topic" }}
+  {{/* build unique, sorted topic list */}}
+  {{ $groups := slice }}
+  {{ range $sorted }}
+    {{ range .topics }}{{ if not (in $groups .) }}{{ $groups = $groups | append . }}{{ end }}{{ end }}
+  {{ end }}
+  {{ $groups = sort $groups }}
+  {{ range $groups }}
+    <h3 class="resources-group">{{ . }}</h3>
+    <ul class="resource-list">
+      {{ range $sorted }}
+        {{ if in .topics $ }}
+          {{ $typeSlug := "link" }}{{ if eq .type "PDF" }}{{ $typeSlug = "pdf" }}{{ end }}
+          <li class="resource-item">
+            <div class="badges">
+              {{ range .sources }}<span class="badge badge--source badge--source-{{ urlize . }}">{{ . }}</span>{{ end }}
+              <span class="badge badge--type badge--type-{{ $typeSlug }}">{{ .type }}</span>
+              {{ range .topics }}<span class="badge badge--topic badge--topic-{{ urlize . }}">{{ . }}</span>{{ end }}
+            </div>
+            <div class="resource-main">
+              <a href="{{ .url }}" target="_blank" rel="noopener" class="resource-title">{{ .title }}</a>
+              {{ with .summary }}<div class="resource-summary">{{ . | markdownify }}</div>{{ end }}
+            </div>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ else }}
+  <ul class="resource-list">
+    {{ range $sorted }}
+      {{ $typeSlug := "link" }}{{ if eq .type "PDF" }}{{ $typeSlug = "pdf" }}{{ end }}
+      <li class="resource-item">
+        <div class="badges">
+          {{ range .sources }}<span class="badge badge--source badge--source-{{ urlize . }}">{{ . }}</span>{{ end }}
+          <span class="badge badge--type badge--type-{{ $typeSlug }}">{{ .type }}</span>
+          {{ range .topics }}<span class="badge badge--topic badge--topic-{{ urlize . }}">{{ . }}</span>{{ end }}
+        </div>
+        <div class="resource-main">
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="resource-title">{{ .title }}</a>
+          {{ with .summary }}<div class="resource-summary">{{ . | markdownify }}</div>{{ end }}
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

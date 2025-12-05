@@ -1,0 +1,6 @@
+# i18n/en.yaml
+- id: last_updated
+  translation: "Updated on"
+# Some themes use slightly different keys; these safe aliases won’t hurt:
+- id: last_updated_on
+  translation: "Updated on"

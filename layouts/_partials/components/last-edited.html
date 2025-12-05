@@ -1,0 +1,31 @@
+<!--- {{- $last_updated := T "last_updated" -}} --->
+
+<!---This makes the bottom line show only when: --->
+
+<!--- the page sets show_lastmod: true (or show_date_updated: true for older pages), or the site default params.features.page.lastmod is true.--->
+
+
+{{/* Respect per-page and site-wide flags for showing last modified */}}
+{{- $siteDefault := site.Params.features.page.lastmod | default false -}}
+{{- $show := cond (isset .Params "show_lastmod")
+      (.Params.show_lastmod)
+      (cond (isset .Params "show_date_updated") (.Params.show_date_updated) $siteDefault) -}}
+{{- if and $show (not .Lastmod.IsZero) -}}
+  {{ $datetime := (time.Format "2006-01-02T15:04:05.000Z" .Lastmod) }}
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="{{ $datetime }}">
+    <span>{{ i18n "last_updated" | default "Last updated on" }}</span>
+    {{ .Lastmod | time.Format (site.Params.locale.date_format | default ":date_long") -}}
+  </time>
+{{- end -}}
+
+
+
+{{- if (.Params.show_date_updated | default true) | and .Lastmod -}}
+  {{ $datetime := (time.Format "2006-01-02T15:04:05.000Z" .Lastmod) }}
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="{{ $datetime }}">
+    <span>{{ $last_updated }}</span>
+    {{ .Lastmod | time.Format (site.Params.locale.date_format | default ":date_long") -}}
+  </time>
+{{- else -}}
+  <div class="mt-16"></div>
+{{- end -}}

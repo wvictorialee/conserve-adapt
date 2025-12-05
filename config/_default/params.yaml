@@ -35,10 +35,10 @@ header:
     block: "navbar"
     align: "center"
     fixed_to_top: true
-    #logo:
-      #text: "Resources for Historic Property Owners"
+    logo:
+      text: "Test"
       # Logo filename in `assets/media/` folder
-      # filename: "Asset.svg"
+      filename: "uoelogo2.svg"
     # button:
     #   enable: true
     #   text: "Get Started"
@@ -49,7 +49,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} W. Victoria Lee. Unless otherwise noted.' # This work is licensed under {license}
+    notice: '© {year} W. Victoria Lee. This work is licensed under {license} unless otherwise noted.'
     license:
       enable: true
       allow_derivatives: false
