@@ -9,11 +9,7 @@ title: "Window Retrofit Resources for Historic Owner-Occupiers"
 baseURL: 'https://historicwindow.netlify.app/' 
 canonifyURLs: true
 
-# this ensure HTML will show up
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+
 
 
 ###########################################
@@ -110,6 +106,10 @@ taxonomies:
   author: authors
 markup:
   _merge: deep
+  # below ensure HTML will show up
+  goldmark:
+    renderer:
+      unsafe: true
 related:
   threshold: 80
   includeNewer: true
