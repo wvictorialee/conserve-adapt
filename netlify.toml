@@ -1,34 +1,37 @@
 [build]
+  publish = "public"
   command = """
     set -e
-    echo "=== Starting Blog build process ==="
-    echo "Node version: $(node --version)"
-    echo "pnpm version: $(pnpm --version)"
-    echo "Hugo version: $(hugo version)"
-    echo "Go version: $(go version || echo 'Go not available')"
-    
+    echo "=== Starting build ==="
+    echo -n "Node: "; node --version || true
+    echo -n "Hugo: "; hugo version
+    echo -n "Go: "; go version || true
+
+    echo "=== Enable pnpm (Corepack) ==="
+    corepack enable
+    corepack prepare pnpm@9.12.0 --activate
+    echo -n "pnpm: "; pnpm --version
+
     echo "=== Installing dependencies ==="
-    pnpm install --verbose
-    
-    echo "=== Running Hugo build ==="
-    hugo --gc --minify -b $URL --logLevel debug --printI18nWarnings --printPathWarnings
-    
-    echo "=== Running Pagefind indexing ==="
+    pnpm install --frozen-lockfile || pnpm install
+
+    echo "=== Hugo build ==="
+    hugo --gc --minify -b "$URL" --logLevel debug --printI18nWarnings --printPathWarnings
+
+    echo "=== Pagefind index ==="
     pnpm dlx pagefind --source 'public' --verbose
-    
-    echo "=== Build completed successfully ==="
+
+    echo "=== Done ==="
   """
-  publish = "public"
 
 [build.environment]
   HUGO_VERSION = "0.152.1"
-  GO_VERSION = "1.21.5"
-  NODE_VERSION = "22"
+  NODE_VERSION = "20"
+  GO_VERSION = "1.22.6"
+  HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
-  HUGO_LOG_I18N_WARNINGS = "true"
-  HUGO_LOG_WARNINGS = "true"
   FORCE_COLOR = "1"
-  PNPM_LOG_LEVEL = "debug"
+  PNPM_LOG_LEVEL = "info"
 
 [context.production.environment]
   HUGO_ENV = "production"
@@ -38,8 +41,10 @@
     set -e
     echo "=== Deploy Preview Build ==="
     echo "Deploy URL: $DEPLOY_PRIME_URL"
-    pnpm install --verbose
-    hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL --logLevel debug --printI18nWarnings --printPathWarnings
+    corepack enable
+    corepack prepare pnpm@9.12.0 --activate
+    pnpm install --frozen-lockfile || pnpm install
+    hugo --gc --minify --buildFuture -b "$DEPLOY_PRIME_URL" --logLevel debug --printI18nWarnings --printPathWarnings
     pnpm dlx pagefind --source 'public' --verbose
   """
 
@@ -48,8 +53,10 @@
     set -e
     echo "=== Branch Deploy Build ==="
     echo "Deploy URL: $DEPLOY_PRIME_URL"
-    pnpm install --verbose
-    hugo --gc --minify -b $DEPLOY_PRIME_URL --logLevel debug --printI18nWarnings --printPathWarnings
+    corepack enable
+    corepack prepare pnpm@9.12.0 --activate
+    pnpm install --frozen-lockfile || pnpm install
+    hugo --gc --minify -b "$DEPLOY_PRIME_URL" --logLevel debug --printI18nWarnings --printPathWarnings
     pnpm dlx pagefind --source 'public' --verbose
   """
 
