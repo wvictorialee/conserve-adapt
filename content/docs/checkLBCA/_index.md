@@ -1,8 +1,11 @@
 ---
 title: Listed or Conservation Area?
 weight: 12
-pager: false
 toc: true
+# below only works if it's not an _index page. 
+pager: true
+show_pager: true
+show_prev_next: true
 ---
 
 Chances are if your home is a **listed building** you would have known this when you purchased it. However, you may not know if your home is located in a **conservation area** (or the Edinburgh World Heritage Site). Both the Historic Environment Scotland (HES) and the City of Edinburgh Council (CEC) provide websites for you to check.

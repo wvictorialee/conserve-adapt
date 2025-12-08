@@ -74,7 +74,9 @@ sections:
     content:
       title: 
       text: |
-        Click on **Resources** at the top to enter. 
+        Click on **Resources** at the top to enter.
+        
+        If you are on a mobile device, click **[here]({{<relref "/docs/">}})** to enter. 
         
       
 ---

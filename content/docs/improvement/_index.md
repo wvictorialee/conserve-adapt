@@ -3,7 +3,7 @@ title: Improvement Options
 weight: 20
 toc: true
 ---
-**_[Retrofitting Historic Sash & Case Windows: A Quick Start Guide for Homeowners]({{< relref "docs/_index.md" >}})_** discusses the different improvement options. This page provides some additional information and examples of the different options. To avoid endorsing any particular product, no brand names are mentioned. The purpose of this page is to show you the range of possibilities out there.  
+==**_[Retrofitting Historic Sash & Case Windows: A Quick Start Guide for Homeowners]({{< relref "docs/_index.md" >}})_** discusses the different improvement options.== This page provides some additional information and examples of the different options. To avoid endorsing any particular product, no brand names are mentioned. The purpose of this page is to show you the range of possibilities out there.  
 
 ### Draughtproofing & Refurbishment
 As explained in [Common Window Issues]({{<relref "docs/issues/_index.md#draughts">}}), you can lose heat through the window in two ways: through the glass panes themselves or through the air leakage around the frames and any moveable parts. If you have excessive air leakage, you can have triple-glazing and still be cold. Therefore, before you decide to improve the glazing, draughtproofing should be considered first. 

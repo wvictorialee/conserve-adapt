@@ -4,7 +4,7 @@ weight: 17
 toc: true
 ---
 
-Most guidance recommend that you consult professionals (e.g. conservation architects) to deal with planning matters when doing works to historic buildings. Indeed, preparing the necessary planning paperwork (or even just to find out if you need to apply for permission) can be daunting and time-consuming. However, depending on the scale of the work you plan to do, the fee incurred by professional services can feel disproportionate to the total cost of the work.
+Most guidance recommend that you consult professionals (e.g. conservation architects, see [Find the Right Professionals]({{<relref "docs/findprof/_index.md">}})) to deal with planning matters when doing works to historic buildings. Indeed, preparing the necessary planning paperwork (or even just to find out if you need to apply for permission) can be daunting and time-consuming. However, depending on the scale of the work you plan to do, the fee incurred by professional services can feel disproportionate to the total cost of the work.
 
 For window improvements, some tradespeople or glazing companies may offer to do the paperwork for you for an extra fee. Still, it's understandable that many homeowners would prefer to economise as much as possible and tackle the planning paperwork on their own. Hopefully, the information on the **[Planning Paperwork]({{< relref "docs/planning/_index.md" >}})** page provided you some pointers if you decide to manage planning matters yourself. This page offers a few more tips to help strengthen your case in planning applications. Be sure to also see the list of **[Useful Documents]({{< relref "docs/usefuldoc/_index.md" >}})**.
 

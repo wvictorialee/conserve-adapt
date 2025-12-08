@@ -5,7 +5,7 @@ items:
     source: "Scot Gov"        # or sources: ["Scot Gov"] can use source: "Scot Gov" (string) or sources: ["Scot Gov","HES"] (list) for multiple badges.
     topics: ["Planning"]      # optional: ["Planning", "Policy"]
     # type: "pdf"             # optional; auto-detected from URL if omitted; "pdf" or "link" is optional; if omitted, the shortcode sets “PDF” if the URL ends with .pdf (case‑insensitive), otherwise “Link”.
-    summary: "Latest updates on PDR for all homes (not just historic properties)."
+    summary: "Latest updates on permitted development rights (PDR) for all homes (not just historic properties)."
     weight: 10
 
   - title: "Works that are allowed through permitted development"
@@ -14,31 +14,31 @@ items:
     topics: ["Planning"]      
     # type: "pdf"             
     summary: "This is for all homes; note that for protected buildings (LB or in CA) your PDR would be different."
-    weight: 20
+    weight: 2
 
   - title: "📌 Quick Guide to Windows"
     url: "https://www.edinburgh.gov.uk/downloads/download/13905/planning-quick-guides"
     source: "Edin Council"
     topics: ["Planning"]      
     # type: "pdf"             
-    summary: "Planning requirements to window replacement and alterations. Document is PDF; scroll to the bottom (link targets the landing page so future updates are picked up)."
-    weight: 30
+    summary: "Planning requirements to window replacement and alterations. Document is PDF; scroll to the bottom (link is to the landing page so future updates won't break the link)."
+    weight: 3
 
   - title: "📌 Prior approval for window replacement"
     url: "https://www.edinburgh.gov.uk/planning-applications-1/prior-approval-%E2%80%93-windows"
     source: "Edin Council"
     topics: ["Planning"]      # optional: ["Planning", "Policy"]
     # type: "pdf"             # optional; auto-detected from URL if omitted
-    summary: "Details on this _light_ version of planning permission."
-    weight: 50
+    summary: "Details on this _light touch_ version of planning permission, only available for certain alterations, such as windows."
+    weight: 4
 
   - title: "A quick summary of the planning system in Scotland"
     url: "https://www.rspb.org.uk/helping-nature/what-you-can-do/planning-for-nature-toolkit/scotland-planning-system/the-planning-system-overview"
     source: "UK Charity"
     topics: ["Planning"]      
     # type: "pdf"             
-    summary: "Very good explanation of how planning in Scotland works and the various jargon."
-    weight: 60
+    summary: "Offers a very good plain-English explanation of how planning in Scotland works and the various jargon."
+    weight: 5
 
   - title: "Defining a Material Consideration"
     url: "https://www.gov.scot/publications/planning-series-circular-3-2013-development-management-procedures/pages/12/"
@@ -46,7 +46,7 @@ items:
     topics: ["Planning"]      
     # type: "pdf"             
     summary: "Scottish Government's definition of 'material considerations' in planning."
-    weight: 70
+    weight: 6
 
   - title: "Material Considerations - Explainer"
     url: "https://www.pas.org.uk/wp-content/uploads/2023/04/3.-Material-Considerations-04-2023.pdf"
@@ -54,15 +54,15 @@ items:
     topics: ["Planning"]      
     type: "pdf"             
     summary: "Planning Aid Scotland's helpful explanation of what 'material considerations' are."
-    weight: 80
+    weight: 7
 
   - title: "📌 Managing Change in the Historic Environment: Windows (2020)"
     url: "https://www.historicenvironment.scot/archives-and-research/publications/publication/?publicationId=3425bb51-8a55-4f99-b7aa-a60b009fbca2"
     source: "Historic Environment Scotland"
     topics: ["Technical"]      
     type: "pdf"             
-    summary: "Technical guidance on altering windows in historic buildings."
-    weight: 90
+    summary: "Technical guidance on altering windows in historic buildings. This document is a material consideration in the determination of planning applications."
+    weight: 8
 
   - title: "📌 Listed Buildings and Conservation Areas (2025)"
     url: "https://www.edinburgh.gov.uk/downloads/file/27028/listed-building-and-conservation-areas"
@@ -70,7 +70,7 @@ items:
     topics: ["Planning"]      
     type: "pdf"             
     summary: "Updated Sept. 2025. Non-statutory guidance that is used as a material consideration in the determination of planning applications."
-    weight: 100
+    weight: 1
 
   - title: "📌 Edinburgh Conservation Area Character Appraisals"
     url: "https://www.edinburgh.gov.uk/directory/10219/conservation-area-character-appraisals"
@@ -78,7 +78,7 @@ items:
     topics: ["Planning"]      
     type: "pdf"             
     summary: "Documents that detail the special character of each conservation area."
-    weight: 110
+    weight: 9
 
   - title: "Short Guide: Sash and Case Windows (2008)"
     url: "https://www.historicenvironment.scot/archives-and-research/publications/publication/?publicationId=9ea41caf-aa32-4827-ba08-a59100fea1a3"
@@ -86,7 +86,7 @@ items:
     topics: ["Technical"]      
     type: "pdf"            
     summary: "Short technical pamphlet on the maintenance and repair of sash and case windows."
-    weight: 120
+    weight: 11
 
   - title: "INFORM Guide: Maintaining Sash and Case Windows (2007)"
     url: "https://www.historicenvironment.scot/archives-and-research/publications/publication/?publicationId=de744d4d-0610-48f4-af5e-a59500f93be8"
@@ -94,7 +94,7 @@ items:
     topics: ["Technical"]      
     type: "pdf"             
     summary: "Short basic introduction to the maintenance and repair of traditional sash and case windows."
-    weight: 130
+    weight: 12
 
   - title: "INFORM Guide: Timber Window Shutters (2010)"
     url: "https://www.historicenvironment.scot/archives-and-research/publications/publication/?publicationId=0d28af6e-8eea-46e4-829b-a59800a6b1bb"
@@ -102,7 +102,7 @@ items:
     topics: ["Technical"]      
     type: "pdf"             
     summary: "Short basic introduction on traditional wooden window shutters."
-    weight: 140
+    weight: 13
 
   - title: "Guide to Energy Retrofit of Traditional Buildings (2023)"
     url: "https://www.historicenvironment.scot/archives-and-research/publications/publication/?publicationid=47c9f2eb-1ade-4a76-a775-add0008972f3"
@@ -110,4 +110,12 @@ items:
     topics: ["Technical"]      
     type: "pdf"             
     summary: "Technical guidance on retrofit measures that can be safely and appropriately applied to historic buildings."
-    weight: 150
+    weight: 14
+
+  - title: "Stockbridge Colonies Simplified Guidance for Fitting Double Glazing in Colonies homes (2025)"
+    url: "https://stockbridgecolonies.com/simplified-guidelines-for-fitting-double-glazing-in-colonies-homes/"
+    source: "Local"
+    topics: ["Planning"]      
+    type: "pdf"             
+    summary: "A Stockbridge Colonies (Edinburgh) focused guidance pamphlet compiled by local residents."
+    weight: 15

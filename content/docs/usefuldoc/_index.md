@@ -15,12 +15,17 @@ reading_time: false
 comments: false
 ---
 
-These are documents that you would want to refer to before beginning your retrofit journey. Items with a :pushpin: are especially important if you plan to prepare the planning paperworks yourself. 
+These are documents that you would want to refer to before beginning your retrofit journey. Items with a :pushpin: are especially important if you plan to prepare the planning paperworks yourself. See [Technical Info Sources]({{<relref "docs/techinfo/_index.md">}}) for additional reading on technical matters concerning retrofits and energy improvements more generally. 
+
+***
+### Key Planning Documents
+{{< resources-list only="9,10,1" >}}
+***
+### Window-Specific Documents
+{{< resources-list only="3,4,8,11,12,13,15" >}}
+
+***
+### Explainers & Further Reading
+{{< resources-list only="5,6,7,2,14" >}}
 
 
-### Window-Specific
-{{< resources-list only="2,5,6,7" >}}
-
-
-### Applicable to All Historic Properties
-{{< resources-list topic="Technical" >}}
