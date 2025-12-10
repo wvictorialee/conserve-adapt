@@ -1,10 +1,12 @@
+{{- `
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Window Retrofit Resources for Historic Property Owners",
-  "url": "{{ .Site.BaseURL }}",
-  "logo": "{{ "/media/logo.png" | absURL }}",
+  "url": "` | safeHTML -}}{{ .Site.BaseURL }}{{- `",
+  "logo": "` | safeHTML -}}{{ "/media/logo.png" | absURL }}{{- `",
   "description": "Research-based practical window retrofit resources for historic property owners."
 }
 </script>
+` | safeHTML -}}

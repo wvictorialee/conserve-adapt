@@ -46,12 +46,12 @@ There is also some concerns about the longevity of the panes as the edge seals a
 
 It’s difficult to say how much more likely or under what circumstances blown panes happen in slim-profile double-glazing, because workmanship and skills of the joiners and glaziers are also factors, just like anything that’s assembled by humans. If the existing timber on the sashes is already fragile, it may not be possible to route them to accept the thicker double-glazing. (The slim-profile glazing, although thinner than regular double glazing, is still thicker than single-glazing).
 
-Currently, most slim-profile double-glazing (sometimes called ‘low-sightline’) products are not deemed as legally compliant with the Construction Products Regulations (CPR), which required the double-glazing to be manufactured in accordance with the European Standard EN 12795. You can read the statement from the [Glass and Glazing Federation (GGF)](https://edin.ac/4p0WPHl).
+Currently, most slim-profile double-glazing (sometimes called ‘low-sightline’) products[^1] are not deemed as legally compliant with the Construction Products Regulations (CPR), which required the double-glazing to be manufactured in accordance with the European Standard EN 12795. You can read the statement from the [Glass and Glazing Federation (GGF)](https://edin.ac/4p0WPHl).
 
 #### Vacuum Glazing
 An alternative to slim-profile double glazing is vacuum cavity double-glazing, which naturally has a very narrow profile due to the 0.2mm gap between the panes. The vacuum cavity provides excellent insulation and can reduce heat loss through the glass panes even better than the standard double-glazing with 13-20 mm gap filled with inert gas. However, the current market is such that vacuum cavity double-glazing can be quite expensive. The most popular product also comes from continental Europe meaning longer lead time to when the actual work can begin.
 
-Because there is no air nor gas in the gap between the glass panes, vacuum glazing usually has spacers to keep the gap from collapsing on itself. These spacers show up as tiny dots on the glass panes. It is not obvious but they are visible if you know what to look or are very close to the window. Ane example can be seen in the image below.
+Because there is no air nor gas in the gap between the glass panes, vacuum glazing usually has spacers to keep the gap from collapsing on itself. These spacers show up as tiny dots on the glass panes. The dots are usualy not obvious but are visible if you know what to look or are very close to the window. An example can be seen in the image below.
 
 <figure class="my-6 mx-auto text-center w-3/4 md:w-1/2">
     <img
@@ -145,3 +145,5 @@ Historic windows had shutters before they had glass panes, and many historic win
 When closed, shutters add an extra layer over the glazing, helping to cut draughts and noise and improve privacy and security at night. Some people use them instead of curtains or blinds. The trade‑off is that shutters completely block light and views, so they’re not as useful during the day. 
 
 When not in use, shutters for historic windows usually fold into a recess in the wall on either side of the window (See p. 4 of _[Retrofitting Historic Sash & Case Windows]({{< relref "docs/_index.md" >}})_). Sometimes shutters are painted shut and may need careful releasing, which can be done as part of a refurbishment. If there’s no shutter, or the shutter is of poor condition, new shutter can be made by skilled joiner in the style of the same period as your window (which may include panelled design moulding). Whether you are refurbishing or reinstating your historic window shutters, you might want to consider how the shutters fasten, and how the shutters can be pulled out of the wall recess and manoeuvred. More can be learned about shutters from Historic Environment Scotland's [INFORM Guide](https://www.historicenvironment.scot/archives-and-research/publications/publication/?publicationId=0d28af6e-8eea-46e4-829b-a59800a6b1bb).
+
+[^1]: These slim-profile products may also be called _slimlite_ or _slimline_. 

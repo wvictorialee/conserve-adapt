@@ -22,13 +22,13 @@ params:
       date: false      # hide the published date under the title by default
       lastmod: false   # hide the “Last updated” line by default
   descriptions: "Research-based practical window retrofit resources for historic building owners"
-  services:
-    umami_analytics:
-      enabled: true
-      src: "https://cloud.umami.is/script.js"
-      website_id: "6a7e9ec8-ec89-4902-8eb1-5820f1aa8017"
-      domains: "historicwindow.netlify.app"
-      environments: ["production"]
+  # services:
+  #   umami_analytics:
+  #     enabled: true
+  #     src: "https://cloud.umami.is/script.js"
+  #     website_id: "6a7e9ec8-ec89-4902-8eb1-5820f1aa8017"
+  #     domains: "historicwindow.netlify.app"
+  #     environments: ["development","production"]
 # Add a global cascade that hides all date variants (covers different layouts that use different flags)
 cascade:
   # Global default for all content
