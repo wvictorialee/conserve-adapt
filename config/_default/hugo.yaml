@@ -22,12 +22,6 @@ params:
       date: false      # hide the published date under the title by default
       lastmod: false   # hide the “Last updated” line by default
   descriptions: "Research-based practical window retrofit resources for historic building owners"
-  umami_analytics:
-    enabled: true
-    src: "https://cloud.umami.is/script.js"
-    website_id: "6a7e9ec8-ec89-4902-8eb1-5820f1aa8017"
-    domains: "historicwindow.netlify.app"
-    environments: ["production"]
 # Add a global cascade that hides all date variants (covers different layouts that use different flags)
 cascade:
   # Global default for all content
@@ -36,11 +30,6 @@ cascade:
     show_date: false
     show_lastmod: false         # used by many “page” layouts
     show_date_updated: false    # used by some “docs” layouts
-
-# Add module to run umami-analytics
-module:
-  imports:
-    path: github.com/hugomods/umami-analytics
 
 ############################
 ## PAGE OPTIONS

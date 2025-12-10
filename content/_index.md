@@ -43,11 +43,11 @@ sections:
         - statistic: ":mag_right:"
           description: |
             Informed by University of Edinburgh 
-            research projects 
-        - statistic: ":speech_balloon:"
-          description: |
-            Based on interviews & focus  
-            groups with 100+ owner-occupiers
+            research projects with 100+ owner-occupiers 
+        # - statistic: ":speech_balloon:"
+        #   description: |
+        #     Based on interviews & focus  
+        #     groups with 100+ owner-occupiers
         - statistic: ":open_file_folder:"
           description: |
             Downloadable quick guides,  
