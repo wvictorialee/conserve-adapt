@@ -4,8 +4,8 @@ title: W. Victoria Lee
 
 
 # Full name (for SEO)
-first_name: S
-last_name: C
+first_name: Historic Window
+last_name: Retrofit Resources Website
 
 
 # Is this the primary user of the site?
@@ -28,13 +28,7 @@ profiles:
   - icon: at-symbol
     url: 'mailto:w.victoria.lee@ed.ac.uk'
     label: E-mail Me
-  # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
-  # - icon: academicons/cv
-  #   url: uploads/resume.pdf
-  #   label: Download my resume
-  # - icon: rss
-  #   url: ./post/index.xml
-  #   label: Subscribe to my blog via RSS feed
+
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
@@ -43,4 +37,4 @@ highlight_name: true
 website: ""
 ---
 
-Thi is a website of useful resources
+This is a website of useful resources

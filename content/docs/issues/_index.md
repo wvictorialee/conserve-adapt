@@ -1,6 +1,9 @@
 ---
 title: Common Window Issues
+summary: Explanation of some common window issues, why they occur, and what to look out for. 
 weight: 14
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 toc: true
 ---
 This page explains some common window issues, why they occur, and what to look out for.

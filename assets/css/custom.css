@@ -183,4 +183,3 @@ header .navbar {
 @media (max-width: 768px) {
   :root { --navbar-height: 48px; }
 }
-

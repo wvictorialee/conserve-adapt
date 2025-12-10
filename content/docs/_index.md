@@ -22,6 +22,7 @@ Resources on this site focus on window improvements for listed buildings and pro
   </figcaption>
 </figure>
 
+:speech_balloon: Have you used this Quick Start Guide? Give you feedback by filling out this **[short anonymous survey]({{<relref "docs/feedback/_index.md">}})**.
 
 > [!NOTE] Disclaimer!
 > Every property is different! The materials on this site are for general information only and is not a substitute for professional advice or surveys.   

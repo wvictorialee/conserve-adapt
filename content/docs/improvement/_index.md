@@ -1,6 +1,9 @@
 ---
 title: Improvement Options
+summary: Introduction to the different window improvement options, pros and cons and things to consider.
 weight: 20
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 toc: true
 ---
 ==**_[Retrofitting Historic Sash & Case Windows: A Quick Start Guide for Homeowners]({{< relref "docs/_index.md" >}})_** discusses the different improvement options.== This page provides some additional information and examples of the different options. To avoid endorsing any particular product, no brand names are mentioned. The purpose of this page is to show you the range of possibilities out there.  

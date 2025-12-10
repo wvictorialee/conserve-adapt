@@ -1,10 +1,11 @@
 ---
 title: Useful Documents
+summary: A list of useful documents to read and reference when preparing for window retrofits of a historic property
 weight: 98
 date: 2025-12-01 # this will be hidden if date is in the future
 show_date: false               # under‑title date hidden
 #
-lastmod: 2025-12-01T00:00:00Z
+lastmod: 2025-12-09T00:00:00Z
 show_lastmod: true             # bottom “Last updated …” visible
 #
 pager: false
@@ -22,6 +23,7 @@ These are documents that you would want to refer to before beginning your retrof
 {{< resources-list only="9,10,1" >}}
 ***
 ### Window-Specific Documents
+In addition to _[Retrofitting Historic Sash & Case Windows: A Quick Start Guide for Homeowners]({{<relref "docs/_index.md">}})_.
 {{< resources-list only="3,4,8,11,12,13,15" >}}
 
 ***

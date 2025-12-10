@@ -1,6 +1,9 @@
 ---
 title: Technical Info Sources
+summary: A list of trustworthy sources to find technical information on retrofit options
 weight: 99
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 toc: true
 ---
 There is an abundance of information on the web regarding energy efficiency improvements and retrofits, some of which are even historic buildings specific. However, often the information is provided by companies or professionals whose advice might be sales-driven. 

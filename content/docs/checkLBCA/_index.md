@@ -1,6 +1,9 @@
 ---
 title: Listed or Conservation Area?
+summary: Tips on how to check the protected status of your property
 weight: 12
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 toc: true
 # below only works if it's not an _index page. 
 pager: true

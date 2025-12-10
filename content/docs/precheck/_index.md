@@ -1,5 +1,6 @@
 ---
 title: Pre-Retrofit Checks 📎
+summary: Downloadable worksheet to help you perform pre-retrofit checks of your historic property
 slug: Pre-Retrofit Checks
 weight: 15
 toc: false
@@ -24,3 +25,4 @@ Use the below worksheet as a guide and do a walk-around check to spot issues tha
   </figcaption>
 </figure>
 
+:speech_balloon: Have you used this worksheet? Give you feedback by filling out this **[short anonymous survey]({{<relref "docs/feedback/_index.md">}})**.

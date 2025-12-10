@@ -1,11 +1,10 @@
 ---
 linkTitle: About
 title: About this Website
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 
 # Hide meta on this page
-show_date: false
-show_lastmod: false
-show_last_updated: false
 reading_time: false
 share: false
 profile: false
@@ -22,7 +21,7 @@ The content of this site is based on my research and reflects my own understandi
 
 Every building is different! Always consider the specific condition and significance of your property, and check the latest requirements with your local planning authority before proceeding. 
 
-Please let me know if you have suggestions for improvement. You can contact me via email (historic.voices@ed.ac.uk).
+Please let me know if you have suggestions for improvement by filling out a short anonymous [feedback survey]({{<relref "docs/feedback/_index.md">}}). You can also contact me via email (historic.voices@ed.ac.uk).
 
 Thanks for visiting!
 

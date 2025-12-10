@@ -1,5 +1,6 @@
 ---
 title: Clarify Your Priorities 📎
+summary: Downloadable worksheet to help you consider all aspects of potential window retrofit options and compare them
 weight: 19
 toc: false
 ---
@@ -19,3 +20,5 @@ In addition to upfront cost and energy efficiency, there are several other facto
     Click the image to download from the Edinburgh Research Archive.
   </figcaption>
 </figure>
+
+:speech_balloon: Have you used this worksheet? Give you feedback by filling out this **[short anonymous survey]({{<relref "docs/feedback/_index.md">}})**.

@@ -1,0 +1,4 @@
+{{ if not .Params.images }}
+  <meta property="og:image" content="{{ "/media/og-default.png" | absURL }}">
+  <meta name="twitter:card" content="summary_large_image">
+{{ end }}

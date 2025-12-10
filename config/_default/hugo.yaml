@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: "Window Retrofit Resources for Historic Owner-Occupiers" 
+title: "Window Retrofit Resources for Historic Property Owners" 
 # Website URL
 baseURL: 'https://historicwindow.netlify.app/' 
 canonifyURLs: true
@@ -21,7 +21,7 @@ params:
     page:
       date: false      # hide the published date under the title by default
       lastmod: false   # hide the “Last updated” line by default
-
+  descriptions: "Research-based practical window retrofit resources for historic building owners"
 # Add a global cascade that hides all date variants (covers different layouts that use different flags)
 cascade:
   # Global default for all content

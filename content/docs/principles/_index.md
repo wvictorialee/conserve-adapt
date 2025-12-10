@@ -1,8 +1,11 @@
 ---
 title: Basic Principles
+summary: Fundamental tenets of retrofitting historic buildings
 weight: 13
 pager: false
-toc: false
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
+toc: true
 ---
 What we colloquially call a 'window' in fact contains many different parts and it's possible to retrofit/upgrade/replace them separately. This **elemental approach** can save you money, hassle, and help conserve as much original material as possible - especially important in historic properties. Before you begin, there are some basic retrofitting principles that would be useful to keep in mind. 
 

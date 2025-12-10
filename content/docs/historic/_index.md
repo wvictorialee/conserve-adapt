@@ -1,5 +1,6 @@
 ---
 title: What are Historic Buildings?
+summary: Definition of historic buildings
 weight: 11
 sidebar:
   open: true

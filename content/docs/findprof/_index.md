@@ -1,6 +1,9 @@
 ---
 title: Find the Right Professionals
+summary: Tips on finding the right professionals to do the work
 weight: 21
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 toc: true
 ---
 Unless you plan to go completely DIY on your window improvement and retrofit project, you are likely to need to engage professionals. 
