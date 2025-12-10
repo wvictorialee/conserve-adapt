@@ -15,18 +15,18 @@ marketing:
     local_business_type: ''
     org_name: 'Window Retrofit Resources for Historic Property Owners'
     description: 'A retrofit resource site for historic property owners in Edinburgh and wider Scotland, focusing on windows.'
-    twitter: ''
-  analytics:
-    google_analytics: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
-  verification:
-    google: ''
-    baidu: ''
+    # twitter: ''
+  # analytics:
+  #   google_analytics: ''
+  #   google_tag_manager: ''
+  #   microsoft_clarity: ''
+  #   baidu_tongji: ''
+  #   plausible: ''
+  #   fathom: ''
+  #   pirsch: ''
+  # verification:
+  #   google: ''
+  #   baidu: ''
 
 umami_analytics:
   enabled: true
