@@ -28,13 +28,6 @@ marketing:
   #   google: ''
   #   baidu: ''
 
-umami_analytics:
-  enabled: true
-  src: "https://cloud.umami.is/script.js"
-  website_id: "6a7e9ec8-ec89-4902-8eb1-5820f1aa8017"
-  domains: "historicwindow.netlify.app"
-  environments: ["production"]
-
 # Site header
 header:
   navbar:
