@@ -3,6 +3,8 @@ title: Pre-Retrofit Checks 📎
 summary: Downloadable worksheet to help you perform pre-retrofit checks of your historic property
 slug: Pre-Retrofit Checks
 weight: 15
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 toc: false
 ---
 

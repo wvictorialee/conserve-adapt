@@ -54,11 +54,11 @@ search: # this only works on actual site, not in preview (hugo server)
 # Site footer
 footer:
   copyright:
-    notice: '© {year} W. Victoria Lee. This work is licensed under {license} unless otherwise noted.'
+    notice: '© Copyright 2025-{year} W. Victoria Lee. This work is licensed under {license} unless otherwise noted.'
     license:
       enable: true
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
 
 

@@ -183,3 +183,8 @@ header .navbar {
 @media (max-width: 768px) {
   :root { --navbar-height: 48px; }
 }
+
+/*  Remove the "Build Your Site" button as it's redundant */
+footer a[data-hbx="poweredby_cta"] {
+  display: none !important;
+}

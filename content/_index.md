@@ -16,9 +16,9 @@ sections:
       #   text: Get Started
       #   url: https://hugoblox.com/templates/details/docs/
       #   icon: rocket-launch
-      # secondary_action:
-      #   text: Read the docs
-      #   url: /docs/
+      secondary_action:
+        text: Enter
+        url: /docs/
       # announcement:
       #   text: "Announcing the release of version 2."
       #   link:
@@ -44,6 +44,7 @@ sections:
           description: |
             Informed by University of Edinburgh 
             research projects with 100+ owner-occupiers 
+          link: "/docs/_index.md"
         # - statistic: ":speech_balloon:"
         #   description: |
         #     Based on interviews & focus  

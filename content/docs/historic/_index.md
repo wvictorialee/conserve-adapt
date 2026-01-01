@@ -2,6 +2,8 @@
 title: What are Historic Buildings?
 summary: Definition of historic buildings
 weight: 11
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 sidebar:
   open: true
 ---

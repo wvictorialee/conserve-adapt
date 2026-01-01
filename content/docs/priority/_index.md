@@ -2,6 +2,8 @@
 title: Clarify Your Priorities 📎
 summary: Downloadable worksheet to help you consider all aspects of potential window retrofit options and compare them
 weight: 19
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 toc: false
 ---
 In addition to upfront cost and energy efficiency, there are several other factors to consider when considering your options of window improvements. Use the below worksheet to clarify your priorities and compare the different improvement and retrofit options. 

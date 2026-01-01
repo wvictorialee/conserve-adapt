@@ -4,3 +4,8 @@
 # Some themes use slightly different keys; these safe aliases won’t hurt:
 - id: last_updated_on
   translation: "Updated on"
+
+# Remove the "Build Your Site" button as it's redundant - this actually doesn't work, use custom css instead
+- id: poweredby_button
+  translation: ""
+
