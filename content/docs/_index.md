@@ -1,6 +1,8 @@
 ---
 linkTitle: Resources
 title: Welcome!
+lastmod: 2025-12-09T00:00:00Z
+show_lastmod: true             # bottom “Last updated …” visible
 ---
 
 Resources on this site focus on window improvements for listed buildings and properties in conservation areas in Edinburgh. But much information is also relevant to other councils in Scotland and other types of retrofits.

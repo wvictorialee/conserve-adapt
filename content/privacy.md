@@ -25,6 +25,7 @@ show_pager: false
 show_prev_next: false
 # the link to this page will automatically appear as a link in the footer, no need to mess with footer
 ---
+_**Note:** Also see [Terms of Use]({{<relref "terms.md">}})._
 
 This website does not create any cookies! This is why you are not seeing any cookies notice. This site also has enhanced privacy enabled so no visitors' IP is being logged and no personally identifiable information from visitors is being collected. :smile:
 
