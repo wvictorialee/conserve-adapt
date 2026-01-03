@@ -1,0 +1,32 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n" | safeHTML -}}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  {{- $freq := "weekly" -}}
+  {{- $prio := 0.5 -}}
+
+  {{/* Include regular pages + section pages, excluding anything explicitly disabled */}}
+  {{- $pages := union .Site.RegularPages .Site.Sections -}}
+  {{- $pages = where $pages "Permalink" "!=" "" -}}
+  {{- $pages = where $pages "Params.private" "ne" true -}}
+  {{- $pages = where $pages "Params.sitemap.disable" "ne" true -}}
+
+  {{- range $pages -}}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not .Lastmod.IsZero -}}
+    <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
+    {{- end -}}
+    <changefreq>{{ $freq }}</changefreq>
+    <priority>{{ $prio }}</priority>
+
+    {{- if .IsTranslated -}}
+      {{- range .Translations -}}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+      {{- end -}}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{- end -}}
+  </url>
+  {{- end -}}
+
+</urlset>
