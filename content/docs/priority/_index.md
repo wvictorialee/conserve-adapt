@@ -1,6 +1,6 @@
 ---
 title: Clarify Your Priorities 📎
-summary: Downloadable worksheet to help you consider all aspects of potential window retrofit options and compare them
+summary: Downloadable worksheet to help you consider all aspects of potential window retrofit options and compare them for historic properties
 weight: 19
 lastmod: 2025-12-09T00:00:00Z
 show_lastmod: true             # bottom “Last updated …” visible

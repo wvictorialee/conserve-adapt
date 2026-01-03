@@ -1,6 +1,6 @@
 ---
 title: Technical Info Sources
-summary: A list of trustworthy sources to find technical information on retrofit options
+summary: A list of trustworthy sources to find technical information on retrofit options for historic properties
 weight: 99
 lastmod: 2025-12-09T00:00:00Z
 show_lastmod: true             # bottom “Last updated …” visible

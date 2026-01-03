@@ -98,7 +98,7 @@ disableAliases: true
 outputs:
   home: [HTML, SITEMAP, ROBOTS, RSS, WebAppManifest, headers, redirects, backlinks]
   page: [HTML]
-  section: [HTML, RSS]
+  section: [HTML, RSS, SITEMAP]
 imaging:
   resampleFilter: lanczos
   quality: 90

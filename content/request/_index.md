@@ -7,6 +7,9 @@ show_date: false
 show_lastmod: false
 comments: false
 profile: false
+# Don't want it to show up in sitemap, still findable on google though since not complete noindex
+sitemap:
+  disable: true
 ---
 Fill out the form below to request a printed copy of the _Retrofitting Historic Sash and Case Window_ Quick Guide to be mailed to you (UK only). 
 

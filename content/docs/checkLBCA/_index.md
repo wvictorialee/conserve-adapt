@@ -17,7 +17,7 @@ Chances are if your home is a **listed building** you would have known this when
 - Historic Environment Scotland (HES) [search portal and map](https://www.historicenvironment.scot/advice-and-support/listing-scheduling-and-designations/listed-buildings/search-for-a-listed-building/). The site is for listed buildings, but the [map](https://hesportal.maps.arcgis.com/apps/instant/sidebar/index.html?appid=2059ed04c56b402e8b5197c661bec594) can be used to locate conservation areas.
 
 > [!Note]Note
-> You would want to know the protected status of your property. Whether it is a **listed building** or an _unlisted_ building located in a **conservation area** (or World Heritage Site) will influence the restrictions you have and the references you might want to consult.
+> You would want to know the protected status of your property, because whether it is a **listed building** or an _unlisted_ building located in a **conservation area** (or World Heritage Site) will influence the restrictions you have and the references you need to consult.
 
 ### Tips on navigating the HES map[^1]
 #### **1. Use the 'layer' function to make the map more readable:** 

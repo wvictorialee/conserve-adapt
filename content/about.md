@@ -11,9 +11,11 @@ share: false
 profile: false
 pager: false
 comments: false
----
-_**Note:** Also see [Privacy Policy]({{<relref "privacy.md">}}) and [Terms of Use]({{<relref "terms.md">}})._
 
+# Don't want it to show up in sitemap, still findable on google though since not complete noindex
+sitemap:
+  disable: true
+---
 This website was created and written by Dr W. Victoria Lee from the University of Edinburgh. 
 
 Between 2023-2025 I led several research projects[^1] on understanding the conservation and adaptation process of historic homes in Edinburgh, with a particular focus on sash and case windows. Some of these works were in collaboration with the City of Edinburgh Council (CEC) and Edinburgh World Heritage (EWH). Across these projects I've spoken with 100+ owner-occupiers who have undertaken (or attempted) retrofit works, as well as several heritage specialists, architects, and planners. 

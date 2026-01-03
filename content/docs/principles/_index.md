@@ -24,6 +24,6 @@ What we colloquially call a 'window' in fact contains many different parts and i
 #### **Maintain, repair, then improve**
 - Buildings back then used better materials that are often no longer available today. This is the reason that most available guidance today would encourage you to keep as much original material as possible. 
 - Traditional buildings _are_ higher maintenance than modern buildings. This is just a fact of owning an ‘old’ property. Wooden frames require regular painting every few years, not only to refresh its appearance but also to protect the wood. 
-- You Want to make sure everything is in good maintenance and good repair before doing energy improvement. Otherwise, your retrofit might not last or won't be as effective. 
+- You want to make sure everything is in good maintenance and good repair before doing energy improvement. Otherwise, your retrofit might not last or won't be as effective. 
 - Often, just maintenance and repair can help with improving some energy efficiency already.
 

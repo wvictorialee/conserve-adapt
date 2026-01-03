@@ -1,6 +1,6 @@
 ---
 title: Strengthen Your Case
-summary: Tips on preparing for the necessary planning paperwork for window retrofits
+summary: Tips on preparing for the necessary planning paperwork for window retrofits in historic properties
 weight: 17
 lastmod: 2025-12-09T00:00:00Z
 show_lastmod: true             # bottom “Last updated …” visible

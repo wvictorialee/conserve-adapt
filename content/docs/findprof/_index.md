@@ -1,6 +1,6 @@
 ---
 title: Find the Right Professionals
-summary: Tips on finding the right professionals to do the work
+summary: Tips on finding the right professionals to do the work for historic properties
 weight: 21
 lastmod: 2025-12-09T00:00:00Z
 show_lastmod: true             # bottom “Last updated …” visible

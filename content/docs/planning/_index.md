@@ -1,6 +1,6 @@
 ---
 title: Planning Paperwork
-summary: A primer on the different types of planning paperwork that might be required when retrofitting a protected property
+summary: A primer on the different types of planning paperwork that might be required when retrofitting a protected historic property
 weight: 16
 lastmod: 2025-12-01T00:00:00Z
 show_lastmod: true             # bottom “Last updated …” visible

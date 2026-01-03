@@ -12,7 +12,11 @@ show_lastmod: true             # bottom “Last updated …” visible
 # show_date_updated: true      # optional; keeping this true is fine too
 # Optional: if your layout still prints the meta row, hide it
 show_meta: false          # some layouts use this
-#
+
+# Don't want it to show up in sitemap, still findable on google though
+sitemap:
+  disable: true
+
 draft: false
 share: false
 show_author: false

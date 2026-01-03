@@ -2,6 +2,9 @@
 title: 💬 Your Feedback
 weight: 100
 toc: false
+# Don't want it to show up in sitemap, still findable on google though since not complete noindex
+sitemap:
+  disable: true
 ---
 
 Have you used this website and the downloadable materials? Complete a **3‑minute anonymous feedback survey** below to help improve this resource and understand how it’s used!
