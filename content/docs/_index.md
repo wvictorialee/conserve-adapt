@@ -7,7 +7,7 @@ show_lastmod: true             # bottom “Last updated …” visible
 
 Resources on this site focus on window improvements for listed buildings and properties in conservation areas in Edinburgh. But much information is also relevant to other councils in Scotland and other types of retrofits.
 
-==Materials on this site supplement the information provided in **_Retrofitting Historic Sash & Case Windows: A Quick Start Guide for Homeowners_**.== Download the PDF by clicking on the image below. You can also request a printed copy to be posted to you by filling out [this form]({{< relref "request/index.md" >}}). 
+==Materials on this site supplement the information provided in **_Retrofitting Historic Sash & Case Windows: A Quick Start Guide for Homeowners_**.== Download the PDF by clicking on the image below.[^1] You can also request a printed copy to be posted to you by filling out [this form]({{< relref "request/index.md" >}}). 
 
 <figure class="my-6 mx-auto text-center w-7/12 md:w-2/5 lg:w-1/3">
   <a href="http://tiny.cc/window-quickguide" target="_blank" rel="noopener" aria-label="Open the QuickGuide in a new tab">
@@ -28,3 +28,6 @@ Resources on this site focus on window improvements for listed buildings and pro
 
 > [!NOTE] Disclaimer!
 > Every property is different! The materials on this site are for general information only and is not a substitute for professional advice or surveys.   
+
+
+[^1]: Sometimes the University server is down. If the link doesn't work when you click on it, please try again later, or contact historic.voices@ed.ac.uk

@@ -5,10 +5,10 @@ layout: page
 type: page
 toc: true
 
-date: 2026-01-01
+date: 2026-01-05
 show_date: false               # under‑title date hidden
 
-lastmod: 2026-01-01T00:00:00Z
+lastmod: 2026-01-05T00:00:00Z
 show_lastmod: true             # bottom “Last updated …” visible
 # show_date_updated: true      # optional; keeping this true is fine too
 # Optional: if your layout still prints the meta row, hide it
@@ -36,6 +36,7 @@ _**Note:** Also see [Privacy Policy]({{<relref "privacy.md">}}) and [About]({{<r
 ## Plain English Summary
 - You may link to this website freely.
 - You may **not** copy and paste the website’s text onto another website (especially commercial/trade websites) or republish it elsewhere.
+- You may **not** scrape this website (using any means, including automated bots and crawlers) for AI-training.
 - Photos are © Dr W. Victoria Lee — you must ask permission before reusing them. For contact detail see _[Section 10](#contact)_.
 - Screenshots of third‑party websites are included for instruction; rights remain with their owners.
 
@@ -54,6 +55,9 @@ This means you **may**:
 This means you **may not**:
 - Copy, reproduce, or republish the Site’s content (in whole or in part) on another website, intranet, social media page, brochure, marketing material, or training pack (including by glazing firms, contractors, tradespeople, or other commercial organisations) without prior written permission.
 - Modify, adapt, translate, reformat, or build upon the Site’s content and then republish it, unless you have written permission.
+
+## 2.1 Automated scraping and AI training
+You must **not** access, collect, copy, harvest, scrape, or otherwise extract any content from this Site using automated means (including bots, spiders, crawlers, or similar tools), including for the purpose of building datasets, training or improving machine learning models (including large language models), or providing AI-powered search, summarisation, or content generation services, without the prior written consent of Dr Lee. This prohibition applies regardless of whether the content is accessed directly, via an API, or via third‑party tools.
 
 ## 3. Linking is permitted (and encouraged)
 You may link to this Site, including linking directly to specific pages. Please ensure links are accurate and **do not imply** that Dr Lee or the University of Edinburgh endorses your organisation or services.
