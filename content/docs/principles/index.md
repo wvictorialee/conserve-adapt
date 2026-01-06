@@ -2,7 +2,7 @@
 title: Basic Principles
 summary: Fundamental tenets of retrofitting historic buildings
 weight: 13
-pager: false
+pager: true
 lastmod: 2025-12-09T00:00:00Z
 show_lastmod: true             # bottom “Last updated …” visible
 toc: true

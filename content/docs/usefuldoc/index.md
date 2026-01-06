@@ -8,7 +8,7 @@ show_date: false               # under‑title date hidden
 lastmod: 2025-12-09T00:00:00Z
 show_lastmod: true             # bottom “Last updated …” visible
 #
-pager: false
+pager: true
 toc: true
 # Optional clean layout for a simple list page
 share: false

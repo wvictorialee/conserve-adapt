@@ -188,3 +188,23 @@ header .navbar {
 footer a[data-hbx="poweredby_cta"] {
   display: none !important;
 }
+
+/* Reduce excessive vertical whitespace in the homepage hero */
+#section-hero .mx-auto.max-w-2xl.py-32 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Also neutralise responsive variants that add even more padding */
+@media (min-width: 640px) {
+  #section-hero .sm\:py-48 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+@media (min-width: 1024px) {
+  #section-hero .lg\:py-56 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}

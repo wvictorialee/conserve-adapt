@@ -13,7 +13,7 @@
     echo -n "pnpm: "; pnpm --version
 
     echo "=== Installing dependencies ==="
-    pnpm install --frozen-lockfile || pnpm install
+    pnpm install --frozen-lockfile
 
     echo "=== Hugo build ==="
     hugo --gc --minify -b "$URL" --logLevel debug --printI18nWarnings --printPathWarnings

@@ -20,7 +20,7 @@ Resources on this site focus on window improvements for listed buildings and pro
     />
   </a>
   <figcaption class="mt-2 text-xs italic text-gray-600 dark:text-gray-400">
-    Click the image to download from Edinburgh Research Archive.
+    Click the image to download from the Edinburgh Research Archive.
   </figcaption>
 </figure>
 
