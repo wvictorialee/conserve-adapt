@@ -33,4 +33,4 @@ Thanks for visiting!
 ## Acknowledgements
 This website of resources would not have been possible without the many Edinburgh historic property owners who took the time to speak with me and shared their experiences. I would also like to thank the participants who volunteered to test and proofread this website. 
 
-[^1]: Links to these projects forthcoming.
+[^1]: Links to these projects forthcoming. For a recent article written about these projects, see [here](https://doi.org/10.5281/zenodo.19989238)

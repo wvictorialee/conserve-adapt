@@ -80,3 +80,15 @@
   to = "https://historicwindow.netlify.app/?utm_source=followupemail&utm_campaign=FoSS2025"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/flyer-qr"
+  to = "/?utm_source=flyer&utm_medium=qr&utm_campaign=climate-festival-2026&utm_content=main-flyer"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/flyer"
+  to = "/?utm_source=flyer&utm_medium=typed-url&utm_campaign=climate-festival-2026&utm_content=printed-short-url"
+  status = 302
+  force = true
